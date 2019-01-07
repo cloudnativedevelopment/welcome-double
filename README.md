@@ -11,7 +11,7 @@ git clone https://github.com/okteto/welcome-double
 cd welcome-double
 ```
 
-Deploy the welcome service by running the following command.
+Deploy the welcome service by running the following command:
 ```console
 $ kubectl create -f manifests 
 deployment.apps/welcome created
@@ -41,7 +41,7 @@ Ready! Go to your local IDE and continue coding!
 
 Open your favorite IDE, go to `welcome1/app.py` and change the value of  `option_a` (line 7) from `Cats1` to `Otters1` and save the file. Go to the browser, reload the page, and check the label on the first button. Your changes were applied instantly and automatically!
 
-Now open s new terminal and run the following command on your terminal
+Open a new terminal and run the following command on your terminal:
 
 ```console
 $ cd welcome2
@@ -57,6 +57,8 @@ Congratulations, you're now a **cloud native developer** 😎.
 
 ## Known issues
 
-- If you terminate the execution of any of the `cnd up` commands, you will need to kill both of them, execute `cnd down`, and execute `cnd up` again in one of the folders (or on both of them)
-
 - Wait for `cnd up` commands to finish before executing a new `cnd up` command in a different container.
+
+- If you terminate the execution of any of the `cnd up` commands, you will need to kill both of them, execute `cnd down`, and execute `cnd up` again on both folders, one at a time.
+
+
