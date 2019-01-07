@@ -25,7 +25,7 @@ welcome2   LoadBalancer   10.15.246.131   35.204.124.187   8081:32092/TCP   19h
 ```
 It might take a minute or two for the services to expose the external ips depending on your cluster.
 
-*If you're using minikube, you'll need to either change the services to use a NodePort, or enable load balancers in your instance.*
+*If you're using minikube, you'll need to run `minikube service welcome1` and `minikube service welcome2`.*
 
 Open your browser and hit the external-ips. You should see our welcome services, a place to vote on whether you prefer dogs or cats. Go ahead and place a few votes on your preferred species. 
 
