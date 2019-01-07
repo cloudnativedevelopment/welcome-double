@@ -1,6 +1,6 @@
 # dual-welcome
 
-CND example with multiple cnd up on the same k8s deployment
+CND example with multiple `cnd up` commands on the same k8s deployment.
 
 *Prerequisites: you need to have a kubernetes cluster running and `kubectl` pointing to it.*
 
@@ -59,4 +59,4 @@ Congratulations, you're now a **cloud native developer** 😎.
 
 - If you terminate the execution of any of the `cnd up` commands, you will need to kill both of them, execute `cnd down`, and execute `cnd up` again in one of the folders (or on both of them)
 
-- Before executing the second `cnd up` command, you need to wait for the first one to finish.
+- Wait for `cnd up` commands to finish before executing a new `cnd up` command in a different container.
