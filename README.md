@@ -1,4 +1,4 @@
-# dual-welcome
+# welcome-double
 
 CND example with multiple `cnd up` commands on the same k8s deployment.
 
